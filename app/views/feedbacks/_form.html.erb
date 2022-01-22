@@ -12,13 +12,18 @@
   <% end %>
 
   <div>
-    <%= form.label :date, style: "display: block" %>
-    <%= form.datetime_field :date %>
+    <% form.label :date, style: "display: block" %>
+    <% form.datetime_field :date %>
+  </div>
+
+  <div>
+    <%= form.label :room %><br>
+    <%= form.select :room, [ "Wiggly Worms", "Dancing Dragonflies", "Cheeky Hens", "Little Ladybirds", "Busy Bumblebees", "Little Green Rascals"], :prompt => 'Select a room' %>
   </div>
 
   <div>
     <%= form.label :body, style: "display: block" %>
-    <%= form.text_area :body %>
+    <%= form.text_area :body, placeholder: "What do you want to tell us?" %>
   </div>
 
   <div>
