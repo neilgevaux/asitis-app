@@ -1,14 +1,42 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Feedbacks</h1>
+<h1>All feedback</h1>
 
-<div id="feedbacks">
+<!-- div id="feedbacks">
   <% @feedbacks.each do |feedback| %>
     <%= render feedback %>
     <p>
       <%= link_to "Show this feedback", feedback %>
     </p>
   <% end %>
-</div>
+</div> -->
 
-<%= link_to "New feedback", new_feedback_path %>
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th>Date/time</th>
+      <th>Room</th>
+      <th>Feedback</th>
+      <th>Rating</th>
+      <th colspn="4"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @feedbacks.each do |feedback| %>
+        <tr>
+          <td><%= feedback.created_at %></td>
+          <td><%= feedback.room %></td>
+          <td><%= feedback.body %></td>
+          <td><%= feedback.happy %></td>
+          <td>
+            <% link_to 'Show', feedback %>
+            <% link_to 'Delete', feedback, class: "btn btn-outline-danger", method: :delete, data: { confirm: 'Are you sure?' } %>
+          </td>
+        </tr> 
+    <% end %>
+  </tbody>
+
+</table>
+
+<% link_to "New feedback", new_feedback_path %>
+

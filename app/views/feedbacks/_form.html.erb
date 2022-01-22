@@ -10,28 +10,36 @@
       </ul>
     </div>
   <% end %>
+  <div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <!-- <div>
+      <% form.label :date, style: "display: block" %>
+      <% form.datetime_field :date %>
+    </div> -->
 
-  <div>
-    <% form.label :date, style: "display: block" %>
-    <% form.datetime_field :date %>
-  </div>
+    <div>
+      <% form.label :date_and_time, style: "display: block" %>
+      <% form.datetime_field :created_at %>
+    </div>
 
-  <div>
-    <%= form.label :room %><br>
-    <%= form.select :room, [ "Wiggly Worms", "Dancing Dragonflies", "Cheeky Hens", "Little Ladybirds", "Busy Bumblebees", "Little Green Rascals"], :prompt => 'Select a room' %>
-  </div>
+    <div>
+      <%= form.label :room %><br>
+      <%= form.select :room, [ "Wiggly Worms", "Dancing Dragonflies", "Cheeky Hens", "Little Ladybirds", "Busy Bumblebees", "Little Green Rascals"], :prompt => 'Select a room' %>
+    </div>
 
-  <div>
-    <%= form.label :body, style: "display: block" %>
-    <%= form.text_area :body, placeholder: "What do you want to tell us?" %>
-  </div>
+    <div>
+      <%= form.label :body, style: "display: block" %>
+      <%= form.text_area :body, placeholder: "What do you want to tell us?" %>
+    </div>
 
-  <div>
-    <%= form.label :happy, style: "display: block" %>
-    <%= form.check_box :happy %>
-  </div>
+    <div>
+      <%= form.label :happy, style: "display: block" %>
+      <%= form.check_box :happy %>
+    </div>
 
-  <div>
-    <%= form.submit %>
-  </div>
+    <div>
+      <%= form.submit %>
+    </div>
+  </div><!-- End card body -->
+</div><!-- End card -->
 <% end %>

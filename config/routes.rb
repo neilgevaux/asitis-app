@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   # get 'home/index'
   resources :feedbacks
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-  root 'home#index'
+  root 'feedbacks#new'
   # Defines the root path route ("/")
   # root "articles#index"
 end

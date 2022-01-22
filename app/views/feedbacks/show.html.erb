@@ -3,8 +3,8 @@
 <%= render @feedback %>
 
 <div>
-  <%= link_to "Edit this feedback", edit_feedback_path(@feedback) %> |
-  <%= link_to "Back to feedbacks", feedbacks_path %>
+  <%= link_to "Edit your comment", edit_feedback_path(@feedback) %> |
+  <%= link_to "Back", feedbacks_path %>
 
-  <%= button_to "Destroy this feedback", @feedback, method: :delete %>
+  <%= button_to "Delete your comment", @feedback, method: :delete %>
 </div>

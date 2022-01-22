@@ -38,7 +38,7 @@ class FeedbacksController < ApplicationController
   def update
     respond_to do |format|
       if @feedback.update(feedback_params)
-        format.html { redirect_to feedback_url(@feedback), notice: "Feedback was successfully updated." }
+        format.html { redirect_to feedback_url(@feedback), notice: "Thanks, your comment was succesfully added!" }
         format.json { render :show, status: :ok, location: @feedback }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class FeedbacksController < ApplicationController
     @feedback.destroy
 
     respond_to do |format|
-      format.html { redirect_to feedbacks_url, notice: "Feedback was successfully destroyed." }
+      format.html { redirect_to feedbacks_url, notice: "Your comment was deleted." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class FeedbacksController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def feedback_params
-      params.require(:feedback).permit(:date, :body, :happy)
+      params.require(:feedback).permit(:date, :room, :body, :happy)
     end
 end
