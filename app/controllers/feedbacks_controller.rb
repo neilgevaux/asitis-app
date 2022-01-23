@@ -1,5 +1,6 @@
 class FeedbacksController < ApplicationController
   before_action :set_feedback, only: %i[ show edit update destroy ]
+  before_action :authenticate_admin!, only: %i[ edit ]
 
   # GET /feedbacks or /feedbacks.json
   def index
@@ -65,6 +66,6 @@ class FeedbacksController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def feedback_params
-      params.require(:feedback).permit(:date, :room, :body, :happy)
+      params.require(:feedback).permit(:date, :room, :body, :happy, :user_id)
     end
 end

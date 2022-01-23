@@ -18,4 +18,20 @@
 
 body {
     font-family: "Raleway", sans-serif;
+    background-color: #eaeae1;
+}
+.container {
+    margin-top: 2%;
+}
+.navbar {
+    background-color: none;
+}
+a.nav-link {
+    color: #e5403a;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #3e3e2a;
+}
+p {
+    font-size: 1.2em;
 }

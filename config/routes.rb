@@ -6,4 +6,10 @@ Rails.application.routes.draw do
   root 'feedbacks#new'
   # Defines the root path route ("/")
   # root "articles#index"
+
+  # authenticated :admin do
+  #   root to: "feedbacks#index"
+  # end
+  
+
 end
