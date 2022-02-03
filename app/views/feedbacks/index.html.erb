@@ -21,7 +21,7 @@
           <td><%= feedback.happy %></td>
           <td>
             <% link_to 'Show', feedback %>
-            <% link_to 'Delete', feedback, class: "btn btn-outline-danger", method: :delete, data: { confirm: 'Are you sure?' } %>
+            <%= link_to 'Delete', feedback, class: "btn btn-outline-danger", method: :delete, data: { confirm: 'Are you sure?' } %>
           </td>
         </tr> 
     <% end %>
@@ -29,7 +29,8 @@
 
 </table>
 <% else %>
-<h1>You are not permitted to view this page </h1>
+<h1>You are not permitted to view this page</h1>
+<%= link_to "Back to form", root_path%>
 <% end %>
 
 <% link_to "New feedback", new_feedback_path %>

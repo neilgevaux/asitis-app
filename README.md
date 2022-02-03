@@ -1,24 +1,20 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This app is to collect anonymous feedback from nursery customers, which is stored in a list.
 
-Things you may want to cover:
+Customers add feedback through a form on the front end, and a checkbox to see if they are happy or not.
 
-* Ruby version
+Managers can log in and view the feedback, and see a true/false boolean.
 
-* System dependencies
+* Ruby version 2.7.4
 
-* Configuration
+* Rails version 7.0.1
 
-* Database creation
+* PostgreSL version 14.1
 
-* Database initialization
 
-* How to run the test suite
+## To add
 
-* Services (job queues, cache servers, search engines, etc.)
+* Star rating? Or thumbs up/down icons
 
-* Deployment instructions
-
-* ...
+* Pagination/sortable lists
