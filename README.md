@@ -23,4 +23,4 @@ Managers can log in and view the feedback, and see a true/false boolean.
 
 <img width="1265" alt="Enter feedback screenshot" src="https://user-images.githubusercontent.com/19713055/152773067-25cfda1a-5d3d-48aa-9332-90d6ecb51f11.png">
 
-<img width="1265" alt="Asitis all feedback screenshot" src="(https://user-images.githubusercontent.com/19713055/152773366-5c46e391-d60b-462e-8414-652dae10128c.png)
+![asitis](https://user-images.githubusercontent.com/19713055/152774243-3e073176-6008-4085-aa75-9f167ff1551f.png)
